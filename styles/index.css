@@ -1,0 +1,87 @@
+/* Add your CSS styles here */
+
+html, body {
+    /* Set minimum height to 100% of the viewport */
+    min-height: 100vh;
+
+    /* Create a linear gradient background from top (lightblue) to bottom (blue) */
+    background: linear-gradient(to bottom, rgb(173, 216, 230), rgb(119, 164, 158));
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+header h1,h2, h3, p{
+    text-align: center;
+}
+
+nav {
+    background-color: #46b7ad;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #101b10;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(35, 93, 71);
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #99c4c3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #c6cdcc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e696d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #555;
+}
